@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "YTURLProtocol.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //注册拦截类
+    [NSURLProtocol registerClass:[YTURLProtocol class]];
     return YES;
 }
 

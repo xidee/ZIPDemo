@@ -10,7 +10,7 @@
 #import "AFHTTPSessionManager.h"
 #import "SSZipArchive.h"
 
-@interface ViewController ()<SSZipArchiveDelegate>
+@interface ViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *progressLabel;
 
 @end
@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.edgesForExtendedLayout =  UIRectEdgeNone;
 }
 
 - (IBAction)downloadAction:(UIButton *)sender {
@@ -60,7 +61,7 @@
 {
     NSString *input = [filePath.absoluteString stringByReplacingOccurrencesOfString:@"file://" withString:@""];
     NSLog(@"输出：%@,写入：%@",input,destination);
-    BOOL success = [SSZipArchive unzipFileAtPath:input toDestination:destination delegate:self];
+    BOOL success = [SSZipArchive unzipFileAtPath:input toDestination:destination];
     if (success) {
         //解压成功 输出目标路径
         self.progressLabel.text = @"解压成功";
@@ -86,42 +87,6 @@
             self.progressLabel.text = @"删除失败";
         }
     }
-}
-
-#pragma mark - delegate
-- (void)zipArchiveWillUnzipArchiveAtPath:(NSString *)path zipInfo:(unz_global_info)zipInfo
-{
-
-}
-- (void)zipArchiveDidUnzipArchiveAtPath:(NSString *)path zipInfo:(unz_global_info)zipInfo unzippedPath:(NSString *)unzippedPath
-{
-    
-}
-
-- (BOOL)zipArchiveShouldUnzipFileAtIndex:(NSInteger)fileIndex totalFiles:(NSInteger)totalFiles archivePath:(NSString *)archivePath fileInfo:(unz_file_info)fileInfo
-{
-    return YES;
-}
-- (void)zipArchiveWillUnzipFileAtIndex:(NSInteger)fileIndex totalFiles:(NSInteger)totalFiles archivePath:(NSString *)archivePath fileInfo:(unz_file_info)fileInfo
-{
-    
-}
-- (void)zipArchiveDidUnzipFileAtIndex:(NSInteger)fileIndex totalFiles:(NSInteger)totalFiles archivePath:(NSString *)archivePath fileInfo:(unz_file_info)fileInfo
-{
-    
-}
-- (void)zipArchiveDidUnzipFileAtIndex:(NSInteger)fileIndex totalFiles:(NSInteger)totalFiles archivePath:(NSString *)archivePath unzippedFilePath:(NSString *)unzippedFilePath
-{
-    
-}
-
-- (void)zipArchiveProgressEvent:(unsigned long long)loaded total:(unsigned long long)total
-{
-    
-}
-- (void)zipArchiveDidUnzipArchiveFile:(NSString *)zipFile entryPath:(NSString *)entryPath destPath:(NSString *)destPath
-{
-    
 }
 
 @end
