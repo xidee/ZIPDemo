@@ -104,7 +104,7 @@
             [task resume];
     }else
     {   //本地有数据直接作为结果返回
-        NSURLResponse *response = [[NSURLResponse alloc] initWithURL:self.request.URL MIMEType:mimiType expectedContentLength:[data length] textEncodingName:textEncodingName];
+        NSURLResponse *response = [[NSURLResponse alloc] initWithURL:self.request.URL MIMEType:mimiType expectedContentLength:[data length] textEncodingName:nil];
         
         [[self client] URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
         [[self client] URLProtocol:self didLoadData:data];

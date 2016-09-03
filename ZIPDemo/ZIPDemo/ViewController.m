@@ -59,6 +59,7 @@
 //解压完存放路径 destination
 - (void)unZipWithFilePath:(NSURL *)filePath destination: (NSString *)destination
 {
+    //这里注意去掉url path的 @"file://" 否则会导致访问失败
     NSString *input = [filePath.absoluteString stringByReplacingOccurrencesOfString:@"file://" withString:@""];
     NSLog(@"输出：%@,写入：%@",input,destination);
     BOOL success = [SSZipArchive unzipFileAtPath:input toDestination:destination];
@@ -67,25 +68,33 @@
         self.progressLabel.text = @"解压成功";
         NSLog(@"targetPath:%@",destination);
     }else{
+        //解压失败需要删除
         self.progressLabel.text = @"解压失败";
     }
+    //不管成功失败都要将ZIP删除（沙盒CACHE）
+    [self delZipWithFilePath:input];
 }
 
 - (IBAction)delOlderVersionInPath:(UIButton *)sender {
     //构造沙盒路径
     NSString *dPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
     NSFileManager *fileManager = [NSFileManager defaultManager];
-    NSArray *fileList =[fileManager contentsOfDirectoryAtPath:dPath error:NULL];
-    //执行删除
-    for (NSString *file in fileList)
-    {
-        NSString *filePath =[[NSString alloc] initWithFormat:@"%@/%@",dPath, file];
-        NSError *err = [[NSError alloc] init];
-        if ([fileManager removeItemAtPath:filePath error:&err]) {
-            self.progressLabel.text = @"删除成功";
-        }else{
-            self.progressLabel.text = @"删除失败";
-        }
+    //删除解压完的压缩包 这里是写死的 需要拓展成动态的
+    NSString *filePath =[[NSString alloc] initWithFormat:@"%@/umsdk_IOS_analyics_idfa_v4.0.4",dPath];
+    if ([fileManager removeItemAtPath:filePath error:NULL]) {
+        self.progressLabel.text = @"删除解压文件成功";
+    }else{
+        self.progressLabel.text = @"删除解压文件失败";
+    }
+}
+//删除ZIP
+- (void)delZipWithFilePath :(NSString *)path
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager removeItemAtPath:path error:NULL]) {
+        self.progressLabel.text = @"删除ZIP成功";
+    }else{
+        self.progressLabel.text = @"删除ZIP失败";
     }
 }
 

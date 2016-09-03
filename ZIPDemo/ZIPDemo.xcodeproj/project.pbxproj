@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9641A29B1D7AAFF700CE3707 /* H5ApplicationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2941D7AAFF700CE3707 /* H5ApplicationModel.m */; };
+		9641A29C1D7AAFF700CE3707 /* H5ResourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2961D7AAFF700CE3707 /* H5ResourceManager.m */; };
+		9641A29D1D7AAFF700CE3707 /* H5ResourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2981D7AAFF700CE3707 /* H5ResourceModel.m */; };
+		9641A29E1D7AAFF700CE3707 /* H5UpgradeInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A29A1D7AAFF700CE3707 /* H5UpgradeInfoModel.m */; };
+		9641A2B11D7AB23000CE3707 /* NSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2B01D7AB23000CE3707 /* NSDataAdditions.m */; };
+		9641A2C41D7AB2A000CE3707 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2B41D7AB2A000CE3707 /* MJConst.m */; };
+		9641A2C51D7AB2A000CE3707 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2B71D7AB2A000CE3707 /* MJFoundation.m */; };
+		9641A2C61D7AB2A000CE3707 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2B91D7AB2A000CE3707 /* MJProperty.m */; };
+		9641A2C71D7AB2A000CE3707 /* MJType.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2BB1D7AB2A000CE3707 /* MJType.m */; };
+		9641A2C81D7AB2A000CE3707 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2BD1D7AB2A000CE3707 /* NSObject+MJCoding.m */; };
+		9641A2C91D7AB2A000CE3707 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2BF1D7AB2A000CE3707 /* NSObject+MJKeyValue.m */; };
+		9641A2CA1D7AB2A000CE3707 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2C11D7AB2A000CE3707 /* NSObject+MJProperty.m */; };
+		9641A2CB1D7AB2A000CE3707 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9641A2C31D7AB2A000CE3707 /* NSString+MJExtension.m */; };
 		9681B42D1D40AE5300507F35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9681B42C1D40AE5300507F35 /* main.m */; };
 		9681B4301D40AE5300507F35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9681B42F1D40AE5300507F35 /* AppDelegate.m */; };
 		9681B4331D40AE5300507F35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9681B4321D40AE5300507F35 /* ViewController.m */; };
@@ -49,6 +62,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9641A2931D7AAFF700CE3707 /* H5ApplicationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5ApplicationModel.h; sourceTree = "<group>"; };
+		9641A2941D7AAFF700CE3707 /* H5ApplicationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5ApplicationModel.m; sourceTree = "<group>"; };
+		9641A2951D7AAFF700CE3707 /* H5ResourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5ResourceManager.h; sourceTree = "<group>"; };
+		9641A2961D7AAFF700CE3707 /* H5ResourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5ResourceManager.m; sourceTree = "<group>"; };
+		9641A2971D7AAFF700CE3707 /* H5ResourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5ResourceModel.h; sourceTree = "<group>"; };
+		9641A2981D7AAFF700CE3707 /* H5ResourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5ResourceModel.m; sourceTree = "<group>"; };
+		9641A2991D7AAFF700CE3707 /* H5UpgradeInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H5UpgradeInfoModel.h; sourceTree = "<group>"; };
+		9641A29A1D7AAFF700CE3707 /* H5UpgradeInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H5UpgradeInfoModel.m; sourceTree = "<group>"; };
+		9641A2AF1D7AB23000CE3707 /* NSDataAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAdditions.h; sourceTree = "<group>"; };
+		9641A2B01D7AB23000CE3707 /* NSDataAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAdditions.m; sourceTree = "<group>"; };
+		9641A2B31D7AB2A000CE3707 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
+		9641A2B41D7AB2A000CE3707 /* MJConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJConst.m; sourceTree = "<group>"; };
+		9641A2B51D7AB2A000CE3707 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		9641A2B61D7AB2A000CE3707 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		9641A2B71D7AB2A000CE3707 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		9641A2B81D7AB2A000CE3707 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		9641A2B91D7AB2A000CE3707 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		9641A2BA1D7AB2A000CE3707 /* MJType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJType.h; sourceTree = "<group>"; };
+		9641A2BB1D7AB2A000CE3707 /* MJType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJType.m; sourceTree = "<group>"; };
+		9641A2BC1D7AB2A000CE3707 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		9641A2BD1D7AB2A000CE3707 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		9641A2BE1D7AB2A000CE3707 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		9641A2BF1D7AB2A000CE3707 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		9641A2C01D7AB2A000CE3707 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		9641A2C11D7AB2A000CE3707 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		9641A2C21D7AB2A000CE3707 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		9641A2C31D7AB2A000CE3707 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 		9681B4281D40AE5300507F35 /* ZIPDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZIPDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9681B42C1D40AE5300507F35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9681B42E1D40AE5300507F35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +188,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9641A2921D7AAFF700CE3707 /* ZIPDownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				9641A2AF1D7AB23000CE3707 /* NSDataAdditions.h */,
+				9641A2B01D7AB23000CE3707 /* NSDataAdditions.m */,
+				9641A2931D7AAFF700CE3707 /* H5ApplicationModel.h */,
+				9641A2941D7AAFF700CE3707 /* H5ApplicationModel.m */,
+				9641A2951D7AAFF700CE3707 /* H5ResourceManager.h */,
+				9641A2961D7AAFF700CE3707 /* H5ResourceManager.m */,
+				9641A2971D7AAFF700CE3707 /* H5ResourceModel.h */,
+				9641A2981D7AAFF700CE3707 /* H5ResourceModel.m */,
+				9641A2991D7AAFF700CE3707 /* H5UpgradeInfoModel.h */,
+				9641A29A1D7AAFF700CE3707 /* H5UpgradeInfoModel.m */,
+			);
+			path = ZIPDownloadManager;
+			sourceTree = "<group>";
+		};
+		9641A2B21D7AB2A000CE3707 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				9641A2B31D7AB2A000CE3707 /* MJConst.h */,
+				9641A2B41D7AB2A000CE3707 /* MJConst.m */,
+				9641A2B51D7AB2A000CE3707 /* MJExtension.h */,
+				9641A2B61D7AB2A000CE3707 /* MJFoundation.h */,
+				9641A2B71D7AB2A000CE3707 /* MJFoundation.m */,
+				9641A2B81D7AB2A000CE3707 /* MJProperty.h */,
+				9641A2B91D7AB2A000CE3707 /* MJProperty.m */,
+				9641A2BA1D7AB2A000CE3707 /* MJType.h */,
+				9641A2BB1D7AB2A000CE3707 /* MJType.m */,
+				9641A2BC1D7AB2A000CE3707 /* NSObject+MJCoding.h */,
+				9641A2BD1D7AB2A000CE3707 /* NSObject+MJCoding.m */,
+				9641A2BE1D7AB2A000CE3707 /* NSObject+MJKeyValue.h */,
+				9641A2BF1D7AB2A000CE3707 /* NSObject+MJKeyValue.m */,
+				9641A2C01D7AB2A000CE3707 /* NSObject+MJProperty.h */,
+				9641A2C11D7AB2A000CE3707 /* NSObject+MJProperty.m */,
+				9641A2C21D7AB2A000CE3707 /* NSString+MJExtension.h */,
+				9641A2C31D7AB2A000CE3707 /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
 		9681B41F1D40AE5300507F35 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +249,8 @@
 		9681B42A1D40AE5300507F35 /* ZIPDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9641A2B21D7AB2A000CE3707 /* MJExtension */,
+				9641A2921D7AAFF700CE3707 /* ZIPDownloadManager */,
 				9693729C1D43554A0085415A /* URLProtocol */,
 				96C367171D40D075004CD16E /* SSZipArchive */,
 				9681B4421D40AEA900507F35 /* AFNetworking */,
@@ -402,13 +485,19 @@
 				96C367431D40D075004CD16E /* hmac.c in Sources */,
 				9681B4771D40AEA900507F35 /* UIProgressView+AFNetworking.m in Sources */,
 				9681B46F1D40AEA900507F35 /* AFURLSessionManager.m in Sources */,
+				9641A2B11D7AB23000CE3707 /* NSDataAdditions.m in Sources */,
 				96C3673E1D40D075004CD16E /* aescrypt.c in Sources */,
 				9681B4791D40AEA900507F35 /* UIWebView+AFNetworking.m in Sources */,
+				9641A2C51D7AB2A000CE3707 /* MJFoundation.m in Sources */,
 				9681B4761D40AEA900507F35 /* UIImageView+AFNetworking.m in Sources */,
 				96C3674A1D40D075004CD16E /* unzip.c in Sources */,
+				9641A2CB1D7AB2A000CE3707 /* NSString+MJExtension.m in Sources */,
+				9641A29D1D7AAFF700CE3707 /* H5ResourceModel.m in Sources */,
 				96C367481D40D075004CD16E /* ioapi.c in Sources */,
 				9681B4331D40AE5300507F35 /* ViewController.m in Sources */,
 				9681B4751D40AEA900507F35 /* UIButton+AFNetworking.m in Sources */,
+				9641A2C91D7AB2A000CE3707 /* NSObject+MJKeyValue.m in Sources */,
+				9641A29C1D7AAFF700CE3707 /* H5ResourceManager.m in Sources */,
 				9681B4301D40AE5300507F35 /* AppDelegate.m in Sources */,
 				9681B46B1D40AEA900507F35 /* AFNetworkReachabilityManager.m in Sources */,
 				96C367411D40D075004CD16E /* entropy.c in Sources */,
@@ -423,13 +512,20 @@
 				9681B46D1D40AEA900507F35 /* AFURLRequestSerialization.m in Sources */,
 				9681B4731D40AEA900507F35 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				9681B46E1D40AEA900507F35 /* AFURLResponseSerialization.m in Sources */,
+				9641A2C81D7AB2A000CE3707 /* NSObject+MJCoding.m in Sources */,
 				96C367451D40D075004CD16E /* pwd2key.c in Sources */,
 				969372A21D43566D0085415A /* WebViewController.m in Sources */,
 				96C367461D40D075004CD16E /* sha1.c in Sources */,
+				9641A29E1D7AAFF700CE3707 /* H5UpgradeInfoModel.m in Sources */,
 				96C367401D40D075004CD16E /* aestab.c in Sources */,
 				9681B46A1D40AEA900507F35 /* AFHTTPSessionManager.m in Sources */,
 				9681B4721D40AEA900507F35 /* AFImageDownloader.m in Sources */,
+				9641A2C41D7AB2A000CE3707 /* MJConst.m in Sources */,
+				9641A2C71D7AB2A000CE3707 /* MJType.m in Sources */,
 				9693729F1D43554A0085415A /* YTURLProtocol.m in Sources */,
+				9641A2C61D7AB2A000CE3707 /* MJProperty.m in Sources */,
+				9641A2CA1D7AB2A000CE3707 /* NSObject+MJProperty.m in Sources */,
+				9641A29B1D7AAFF700CE3707 /* H5ApplicationModel.m in Sources */,
 				9681B4741D40AEA900507F35 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				96C3673F1D40D075004CD16E /* aeskey.c in Sources */,
 				96C3674D1D40D075004CD16E /* SSZipArchive.m in Sources */,
